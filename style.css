@@ -1,0 +1,110 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.quotes{
+/* For full screen */
+    width: 100%;
+    background: url(./assets/White\ background\ image.jpg) center;
+    background-size: cover;
+    /* set the height in beginning to view the size */
+    /* height: 800px */
+    padding-bottom: 50px;
+
+}
+
+.quotes h1{
+    background-color: #750d0d;  /* Light background */
+    color: white;
+    text-align: center;  
+    padding: 15px;  
+    font-size: 24px;  
+    font-weight: bold;  
+    width: 58%;  
+    margin: 20px auto;  /* Centering the heading */
+    border-radius: 8px;  
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+
+
+.container{
+    width: 1200px;
+    flex-wrap: wrap;
+    margin: auto;
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-around;
+}
+
+.quotes-items{
+    flex-basis: 23%;
+    margin: 15px 0px;
+    /* for shadow */
+    box-shadow: 0px 0px 10px 3px lightgray; 
+    background: white;
+    text-align: center;
+    padding: 20px 0px;
+    /* border: 2px solid black; */
+}
+
+.quotes-items h3{
+    font-size: 15px;
+    padding: 10px 0px;
+    margin: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.quotes-items p{
+    font-size: 15px;
+    padding: 10px;
+}
+
+.quotes-items button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    margin: 10px 0px;
+}
+
+.quotes-items:hover{
+    background:brown;
+}
+
+.quotes-items:hover h3{
+    color:rgb(255, 255, 255);
+}
+.quotes-items:hover p{
+    color:rgb(255, 255, 255);
+}
+
+.quotes-items:hover button{
+    background: white;
+    color:rgb(0, 0, 0);
+}
+
+.quotes-items:hover img{
+    border: solid white;
+    
+}
+
+.quote-image{
+height: 120px;
+border-radius: 5px;
+border: 3px solid black;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .quotes-items{
+        margin: 10px;
+    }
+    
+}
